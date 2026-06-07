@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NUVAK | One-of-a-Kind Embroidered Denim Handmade in Valencia</title>
-  <meta name="description" content="NUVAK creates one-of-a-kind hand embroidered denim, designed with architectural intention and stitched by hand in Valencia." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet" />
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NUVAK | One of a kind embroidered denim</title>
+  <meta name="description" content="One-of-a-kind embroidered denim handmade in Valencia. Botanical collections, custom pieces and limited releases from NUVAK Atelier.">
+  <link rel="canonical" href="https://www.nuvakatelier.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NUVAK | Botania X26">
+  <meta property="og:description" content="One-of-a-kind embroidered denim handmade in Valencia. Botanical Collection 2026.">
+  <meta property="og:url" content="https://www.nuvakatelier.com/">
+  <meta property="og:image" content="https://www.nuvakatelier.com/assets/botania-x26-social.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NUVAK | Botania X26">
+  <meta name="twitter:description" content="One piece. One owner. Hand embroidered denim made in Valencia.">
+  <meta name="twitter:image" content="https://www.nuvakatelier.com/assets/botania-x26-social.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root{
       --onyx:#0A0A0A;
@@ -31,6 +42,7 @@
     .navlinks{display:flex;gap:28px;align-items:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#25201b}
     .navlinks a{border-bottom:1px solid transparent;padding-bottom:4px}
     .navlinks a:hover{border-color:var(--onyx)}
+    .nav-social-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#8a7f73;margin-left:12px}
     .hero{min-height:100vh;display:grid;grid-template-columns:1.02fr .98fr;align-items:stretch;background:radial-gradient(circle at 20% 10%,#fff8ef 0,#f4eade 46%,#e9ddcc 100%)}
     .hero-copy{padding:clamp(120px,17vh,190px) clamp(28px,6vw,84px) 70px;display:flex;flex-direction:column;justify-content:center}
     .eyebrow{font-size:11px;letter-spacing:.23em;text-transform:uppercase;color:var(--muted);margin-bottom:26px}
@@ -83,7 +95,6 @@
     .jotform-wrap{max-width:920px;margin:42px auto 0;background:#fffaf3;border:1px solid var(--line);padding:18px;text-align:left}
     .jotform-wrap iframe{width:100% !important;max-width:100% !important;border:0 !important}
     .waitlist-small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#655d55;margin-top:20px}
-
     .social-section{background:#fffaf3;padding:80px clamp(24px,5vw,70px);border-top:1px solid var(--line)}
     .social-cards{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:22px}
     .social-card{display:block;padding:34px;background:#f6ecdf;border:1px solid var(--line);transition:.2s ease}
@@ -98,7 +109,7 @@
     .footer-col a,.footer-col p{display:block;font-size:14px;color:#4b443e;margin:0 0 7px}
     .mockup-note{font-size:12px;text-align:center;color:#70675f;padding:18px;background:#e8ddcf}
     @media (max-width:900px){
-      .nav{position:absolute}.navlinks{display:none}.social-cards{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.hero-image{min-height:520px;order:-1}.hero-copy{padding-top:40px}.statement,.maker{grid-template-columns:1fr}.piece{grid-template-columns:1fr}.piece .photo img{height:auto}.process-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gallery-grid img{height:auto}.gallery-grid img:first-child{grid-row:auto}.footer-inner{grid-template-columns:1fr 1fr}h1{font-size:76px}
+      .nav{position:absolute}.navlinks{display:none}.hero{grid-template-columns:1fr}.hero-image{min-height:520px;order:-1}.hero-copy{padding-top:40px}.statement,.maker{grid-template-columns:1fr}.piece{grid-template-columns:1fr}.piece .photo img{height:auto}.process-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gallery-grid img{height:auto}.gallery-grid img:first-child{grid-row:auto}.social-cards{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr}h1{font-size:76px}
     }
     @media (max-width:560px){
       .brand{font-size:22px}.hero-sub{font-size:28px}.actions{align-items:stretch}.button,.link{width:100%;text-align:center}.process-grid,.footer-inner{grid-template-columns:1fr}.section{padding:64px 22px}.piece-card{padding:46px 24px}.maker-copy{padding:54px 24px}.gallery-grid{grid-template-columns:1fr}.fact{font-size:12px}h1{font-size:58px;letter-spacing:.06em}
@@ -114,6 +125,8 @@
         <a href="#piece">The Piece</a>
         <a href="#process">Process</a>
         <a href="#waitlist">Waitlist</a>
+        <span class="nav-social-label">Connect</span>
+        <a href="https://www.instagram.com/nuvakatelier/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://pin.it/55UlRZ4mx" target="_blank" rel="noopener">Pinterest</a>
       </div>
     </nav>
@@ -131,7 +144,7 @@
         </div>
       </div>
       <div class="hero-image">
-        <img src="assets/hero-editorial.jpg" alt="Model wearing NUVAK embroidered white denim in natural light" />
+        <img src="assets/hero-editorial.jpg" alt="Model wearing NUVAK embroidered white denim in natural light">
       </div>
     </header>
 
@@ -147,7 +160,7 @@
     </section>
 
     <section id="piece" class="piece">
-      <div class="photo"><img src="assets/real-full-piece.jpg" alt="Full view of white denim jeans with black botanical embroidery" /></div>
+      <div class="photo"><img src="assets/real-full-piece.jpg" alt="Full view of white denim jeans with black botanical embroidery"></div>
       <article class="piece-card">
         <div class="label">The last release</div>
         <h2>Botanical Collection 2026.</h2>
@@ -160,7 +173,7 @@
         </div>
         <a class="link" href="#waitlist">Join the waiting list →</a>
       </article>
-      <div class="photo"><img src="assets/real-detail-flower.jpg" alt="Close up of black botanical embroidery on white denim" /></div>
+      <div class="photo"><img src="assets/real-detail-flower.jpg" alt="Close up of black botanical embroidery on white denim"></div>
     </section>
 
     <section id="process" class="section process">
@@ -171,25 +184,25 @@
         </div>
         <div class="process-grid">
           <article class="process-card">
-            <img src="assets/process-sketch.jpg" alt="Botanical sketches and embroidery planning" />
+            <img src="assets/process-sketch.jpg" alt="Botanical sketches and embroidery planning">
             <div class="num">01</div>
             <h3>The line is drawn</h3>
             <p>Each design is composed with intention before it touches the fabric.</p>
           </article>
           <article class="process-card">
-            <img src="assets/real-leg-linework.jpg" alt="Black botanical linework placed on white denim" />
+            <img src="assets/real-leg-linework.jpg" alt="Black botanical linework placed on white denim">
             <div class="num">02</div>
             <h3>The fabric is prepared</h3>
             <p>The drawing is placed, the space is considered and the rhythm is set.</p>
           </article>
           <article class="process-card">
-            <img src="assets/process-stitch.jpg" alt="Hand stitching black floral embroidery onto white denim" />
+            <img src="assets/process-stitch.jpg" alt="Hand stitching black floral embroidery onto white denim">
             <div class="num">03</div>
             <h3>The embroidery is stitched</h3>
             <p>Every stitch is made by hand. Slowly. Carefully. One line at a time.</p>
           </article>
           <article class="process-card">
-            <img src="assets/brand-line-piece.jpg" alt="NUVAK line and botanical artwork brand panel" />
+            <img src="assets/brand-line-piece.jpg" alt="NUVAK line and botanical artwork brand panel">
             <div class="num">04</div>
             <h3>The piece is released once</h3>
             <p>Once finished, it becomes one of a kind. One piece. One owner.</p>
@@ -205,7 +218,7 @@
         <p>Architecture taught the studio to value proportion, silence and balance. Embroidery became another way to draw.</p>
         <p>NUVAK is where both worlds meet: line, fabric, time and botanical traces.</p>
       </div>
-      <div class="maker-img"><img src="assets/maker-story.jpg" alt="Editorial NUVAK maker story with architectural drawing and botanical details" /></div>
+      <div class="maker-img"><img src="assets/maker-story.jpg" alt="Editorial NUVAK maker story with architectural drawing and botanical details"></div>
     </section>
 
     <section class="section gallery">
@@ -215,11 +228,11 @@
           <h2>Made to be worn, not stored.</h2>
         </div>
         <div class="gallery-grid">
-          <img src="assets/real-full-piece.jpg" alt="Full NUVAK embroidered denim piece" />
-          <img src="assets/real-detail-flower.jpg" alt="Close-up botanical stitching on white denim" />
-          <img src="assets/real-leg-linework.jpg" alt="Black botanical linework on the denim leg" />
-          <img src="assets/process-stitch.jpg" alt="Hand stitching black floral embroidery onto white denim" />
-          <img src="assets/process-sketch.jpg" alt="Botanical sketch and embroidery planning details" />
+          <img src="assets/real-full-piece.jpg" alt="Full NUVAK embroidered denim piece">
+          <img src="assets/real-detail-flower.jpg" alt="Close-up botanical stitching on white denim">
+          <img src="assets/real-leg-linework.jpg" alt="Black botanical linework on the denim leg">
+          <img src="assets/process-stitch.jpg" alt="Hand stitching black floral embroidery onto white denim">
+          <img src="assets/process-sketch.jpg" alt="Botanical sketch and embroidery planning details">
         </div>
       </div>
     </section>
@@ -230,28 +243,27 @@
         <h2>Join the NUVAK waiting list</h2>
         <p>Be first to access future one-of-a-kind releases, or join the list for a personalised embroidered denim design.</p>
         <div class="jotform-wrap" aria-label="NUVAK waiting list form">
-          <script type="text/javascript" src="https://form.jotform.com/jsform/261574053536054" data-iframe-appended="true"></script><iframe title="NUVAK Waiting List" src="https://form.jotform.com/261574053536054?parentURL=https%3A%2F%2Fwww.nuvakatelier.com%2F&amp;jsForm=true" allow="geolocation; microphone; camera; fullscreen; payment" name="261574053536054" id="261574053536054" scrolling="no" style="width: 10px; min-width: 100%; display: block; overflow: hidden; height: 539px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial;"></iframe>
+          <script type="text/javascript" src="https://form.jotform.com/jsform/261574053536054"></script>
         </div>
         <div class="waitlist-small">One piece. One owner. Designed and stitched in Valencia.</div>
       </div>
     </section>
 
-
     <section class="social-section">
       <div class="inner">
         <div class="section-title">
-          <div class="label">Follow the studio</div>
-          <h2>Continue the story.</h2>
+          <div class="label">Connect</div>
+          <h2>Follow the studio.</h2>
         </div>
         <div class="social-cards">
           <a class="social-card" href="https://www.instagram.com/nuvakatelier/" target="_blank" rel="noopener">
             <div class="social-name">Instagram</div>
-            <p>Process, releases and behind the scenes.</p>
+            <p>Process, releases, behind the scenes and new pieces.</p>
             <span>Visit Instagram →</span>
           </a>
           <a class="social-card" href="https://pin.it/55UlRZ4mx" target="_blank" rel="noopener">
             <div class="social-name">Pinterest</div>
-            <p>Inspiration, botanical denim and visual archive.</p>
+            <p>Botanical inspiration, visual archive and future collections.</p>
             <span>Visit Pinterest →</span>
           </a>
         </div>
@@ -262,7 +274,7 @@
       <div class="footer-inner">
         <div>
           <div class="footer-brand">NUVAK</div>
-          <p>Designed with intention.<br />Stitched by hand.</p>
+          <p>Designed with intention.<br>Stitched by hand.</p>
         </div>
         <div class="footer-col">
           <h4>Info</h4>
@@ -274,7 +286,7 @@
           <h4>Connect</h4>
           <a href="https://www.instagram.com/nuvakatelier/" target="_blank" rel="noopener">Instagram</a>
           <a href="https://pin.it/55UlRZ4mx" target="_blank" rel="noopener">Pinterest</a>
-          <a href="mailto:nuvakatelier@gmail.com">Email</a>
+          <a href="mailto:nuvakatelier@gmail.com">nuvakatelier@gmail.com</a>
         </div>
         <div class="footer-col">
           <h4>Studio</h4>
@@ -284,6 +296,5 @@
       </div>
     </footer>
   </div>
-
-
-</body></html>
+</body>
+</html>

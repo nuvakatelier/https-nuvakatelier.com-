@@ -1,46 +1,44 @@
-# NUVAK one-page website mockup
+# NUVAK Modular Website
 
-This ZIP contains a complete static one-page HTML mockup for NUVAK.
+This version is split into editable partial HTML files so each section can be modified without touching the whole page.
 
-## Files
+## Live entry file
 
-- `index.html`: complete landing page with embedded CSS.
-- `assets/`: optimized images used by the page.
-- `assets/mockup-full-page.jpg`: visual reference of the full-page mockup.
-- `assets/instagram-grid-reference.jpg`: Instagram-style visual reference.
-- `assets/lookbook-poster-reference.jpg`: poster/lookbook visual reference.
+- `index.html` is the public page used by GitHub Pages.
+- It loads the sections from `/partials/` using `assets/js/include.js`.
 
-## How to use
+## Edit sections here
 
-Open `index.html` in any browser.
+- `partials/nav.html` — menu and logo
+- `partials/hero.html` — first screen
+- `partials/about.html` — brand statement
+- `partials/piece.html` — first product/piece
+- `partials/process.html` — process cards
+- `partials/maker.html` — maker story
+- `partials/details.html` — gallery/details
+- `partials/waitlist.html` — waiting list form
+- `partials/footer.html` — footer
 
-To publish it, upload `index.html` and the `assets` folder together. Keep the folder structure exactly the same.
+## Edit styles here
 
-## Waitlist form
+- `assets/css/styles.css`
 
-The form is currently static:
+## Edit images here
 
-```html
-<form action="#" method="post">
+- `assets/`
+
+## Important
+
+This modular version works directly on GitHub Pages because the browser loads the partials dynamically. Do not open `index.html` by double-clicking locally, because browser security may block loading the partial files. Test through GitHub Pages or a local server.
+
+For a quick local preview, run:
+
+```bash
+python3 -m http.server 8000
 ```
 
-Replace `#` with your chosen waitlist provider endpoint, for example Mailchimp, Brevo, ConvertKit, Tally, Typeform, Formspree or your own backend.
+Then open:
 
-The form fields are:
-
-- `email`
-- `instagram`
-
-## Brand direction used
-
-- Language: English.
-- Goal: present the brand, create desire, support future sales and build a waiting list.
-- Style: minimal editorial, ivory/onyx palette, quiet premium mood.
-- CTA: Join the waiting list.
-
-## Suggested next edits
-
-1. Replace the generated/editorial mockup images with final real photos when ready.
-2. Connect the waitlist form.
-3. Add measurement, care and shipping details before selling directly.
-4. Replace Instagram link if the final handle changes.
+```text
+http://localhost:8000
+```

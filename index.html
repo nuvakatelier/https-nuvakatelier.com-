@@ -41,7 +41,6 @@
     .brand{font-family:var(--serif);font-size:28px;letter-spacing:.18em;font-weight:500}
     .navlinks{display:flex;gap:34px;align-items:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#25201b}
 
-    .nav-social-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#8a7f73;margin-left:12px;padding-bottom:4px;border-left:1px solid rgba(10,10,10,.22);padding-left:22px}
     .navlinks a{border-bottom:1px solid transparent;padding-bottom:4px}
     .navlinks a:hover{border-color:var(--onyx)}
     .hero{min-height:100vh;display:grid;grid-template-columns:1.02fr .98fr;align-items:stretch;background:radial-gradient(circle at 20% 10%,#fff8ef 0,#f4eade 46%,#e9ddcc 100%)}
@@ -98,6 +97,11 @@
     input::placeholder{color:#756b61}
     .form-note{font-size:12px;color:#655d55}
 
+    .jotform-wrap{max-width:930px;margin:0 auto 18px;border:1px solid var(--line);background:#fffaf3;overflow:hidden}
+    .jotform-frame{width:100%;height:720px;border:0;display:block;background:#fffaf3}
+    .waitlist-fallback{margin-top:18px}
+
+
     .social-section{background:#f8efe4;padding:72px clamp(24px,5vw,70px) 36px;border-top:1px solid var(--line)}
     .social-section .section-title{margin-bottom:18px}
     .social-section .section-title h2{font-size:clamp(32px,3.5vw,46px);line-height:1.05}
@@ -115,7 +119,6 @@
     .footer-brand{font-family:var(--serif);font-size:32px;letter-spacing:.16em;margin-bottom:10px}
     .footer-col h4{font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 12px;color:#5a5149}
     .footer-col a,.footer-col p{display:block;font-size:14px;color:#4b443e;margin:0 0 7px}
-    .mockup-note{font-size:12px;text-align:center;color:#70675f;padding:18px;background:#e8ddcf}
     @media (max-width:900px){
       .nav{position:absolute}.navlinks{display:none}.hero{grid-template-columns:1fr}.hero-image{min-height:520px;order:-1}.hero-copy{padding-top:40px}.statement,.maker{grid-template-columns:1fr}.piece{grid-template-columns:1fr}.piece .photo img{height:auto}.process-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gallery-grid img{height:auto}.gallery-grid img:first-child{grid-row:auto}form{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr}h1{font-size:76px}
     }
@@ -134,9 +137,7 @@
         <a href="#piece">The Piece</a>
         <a href="#process">Process</a>
         <a href="#waitlist">Waitlist</a>
-        <span class="nav-social-label">Connect</span>
-        <a href="https://www.instagram.com/nuvakatelier/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://pin.it/55UlRZ4mx" target="_blank" rel="noopener">Pinterest</a>
+        <a href="#connect">Contact</a>
       </div>
     </nav>
 
@@ -238,11 +239,11 @@
           <h2>Made to be worn, not stored.</h2>
         </div>
         <div class="gallery-grid">
-          <img src="assets/mockup-full-page.jpg" alt="Full NUVAK website mockup reference">
-          <img src="assets/instagram-grid-reference.jpg" alt="NUVAK Instagram moodboard grid reference">
-          <img src="assets/lookbook-poster-reference.jpg" alt="NUVAK lookbook poster reference">
-          <img src="assets/waitlist-card.jpg" alt="NUVAK waiting list visual card">
-          <img src="assets/real-detail-flower.jpg" alt="Close-up botanical stitching on denim">
+          <img src="assets/real-full-piece.jpg" alt="Full view of the first NUVAK embroidered denim piece">
+          <img src="assets/real-detail-flower.jpg" alt="Close-up of black botanical hand embroidery on white denim">
+          <img src="assets/real-leg-linework.jpg" alt="Botanical linework embroidered on the leg of white denim jeans">
+          <img src="assets/process-stitch.jpg" alt="Hand stitching a black floral line onto white denim">
+          <img src="assets/process-sketch.jpg" alt="Botanical sketch and design planning for NUVAK embroidery">
         </div>
       </div>
     </section>
@@ -252,16 +253,23 @@
         <div class="label">Be the first to know</div>
         <h2>Join the waiting list</h2>
         <p>NUVAK releases pieces slowly and in limited numbers. Join for early access to new pieces, studio notes and limited releases.</p>
-        <form action="#" method="post">
-          <input type="email" name="email" placeholder="Email address" required>
-          <input type="text" name="instagram" placeholder="Instagram handle">
-          <button class="button" type="submit">Join the list</button>
-        </form>
+        <div class="jotform-wrap">
+          <iframe
+            class="jotform-frame"
+            title="NUVAK Waiting List"
+            src="https://form.jotform.com/261574053536054"
+            loading="lazy">
+          </iframe>
+        </div>
         <div class="form-note">No spam. Only new pieces and studio updates.</div>
+        <div class="waitlist-fallback">
+          <a class="link" href="https://form.jotform.com/261574053536054" target="_blank" rel="noopener">
+            Open the waiting list →
+          </a>
+        </div>
       </div>
     </section>
 
-<div class="mockup-note">Mockup package: replace images and connect the waitlist form before publishing, because apparently websites still need plumbing.</div>
 
     <section class="social-section" id="connect">
       <div class="inner">
